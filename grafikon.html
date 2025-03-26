@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="hr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Grafikon filmskih podataka: žanrovi i ocjene."
+    />
+    <meta name="author" content="Josip Ostović" />
+    <link rel="stylesheet" href="style_grafikon.css" />
+    <title>Grafikon filmskih podataka</title>
+  </head>
+  <body>
+    <header>
+      <h1>Grafikon filmskih podataka</h1>
+    </header>
+    <nav aria-label="Glavna navigacija">
+      <ul>
+        <li><a href="index.html">Početna</a></li>
+        <li><a href="grafikon.html">Grafikon</a></li>
+        <li><a href="slike.html">Galerija</a></li>
+      </ul>
+    </nav>
+    <main>
+      <section aria-label="Grafikon žanrova filmova">
+        <h2>Raspodjela filmova po žanrovima</h2>
+        <div class="chart-container">
+          <div class="bar" style="--height: 30" aria-label="Drama: 30%"></div>
+          <div
+            class="bar"
+            style="--height: 25"
+            aria-label="Komedija: 25%"
+          ></div>
+          <div class="bar" style="--height: 15" aria-label="Akcija: 15%"></div>
+          <div class="bar" style="--height: 10" aria-label="Triler: 10%"></div>
+          <div
+            class="bar"
+            style="--height: 20"
+            aria-label="Ostali žanrovi: 20%"
+          ></div>
+        </div>
+        <p>
+          Drama: 30%, Komedija: 25%, Akcija: 15%, Triler: 10%, Ostali žanrovi:
+          20%
+        </p>
+      </section>
+
+      <section aria-label="Prosječna ocjena po državi">
+        <h2>Prosječna ocjena filmova po državi</h2>
+        <div class="chart-container">
+          <div class="bar" style="--height: 7.2" aria-label="SAD: 7.2"></div>
+          <div
+            class="bar"
+            style="--height: 6.5"
+            aria-label="Italija: 6.5"
+          ></div>
+        </div>
+        <p>SAD: 7.2, Italija: 6.5</p>
+      </section>
+    </main>
+    <footer>
+      <p>© 2025. Web Programiranje. Sva prava pridržana.</p>
+    </footer>
+  </body>
+</html>

@@ -1,0 +1,174 @@
+:root {
+  --primary-color: #3498db;
+  --secondary-color: #2ecc71;
+  --header-footer-bg: #5dade2;
+  --nav-bg: #2980b9;
+}
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  overflow-x: hidden;
+}
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f4;
+}
+
+header {
+  background: var(--header-footer-bg);
+  color: white;
+  padding: 20px;
+  text-align: center;
+  width: 100%;
+}
+
+nav {
+  width: 100%;
+  background: var(--nav-bg);
+  padding: 10px 0;
+  text-align: center;
+  margin-top: 10px;
+  position: relative;
+}
+nav ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+nav li {
+  display: inline;
+}
+nav a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  padding: 10px 15px;
+  border-radius: 5px;
+  transition: background 0.3s ease, color 0.3 ease;
+}
+nav a:hover {
+  background: rgba(255, 255, 255, 0.2);
+  color: #ffeb3b;
+}
+main {
+  margin-left: 60px;
+}
+
+.table-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: 20px;
+  width: 100%;
+}
+.table-wrapper {
+  width: 100%;
+  overflow-x: auto;
+}
+table {
+  width: 70%;
+  min-width: 500px;
+  border-collapse: collapse;
+  animation: fadeIn 1s ease-in;
+}
+th,
+td {
+  border: 1px solid #ccc;
+  padding: 10px;
+}
+th {
+  background: linear-gradient(to bottom, var(--primary-color), #2980b9);
+  color: white;
+}
+tr:hover {
+  background-color: #e0e0e0;
+}
+
+aside {
+  width: 20%;
+  margin-left: 20px;
+}
+aside img {
+  width: 100%;
+  height: auto;
+  max-width: 200px;
+  object-fit: contain;
+  transition: opacity 0.3s ease;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+aside img:hover {
+  opacity: 0.7;
+}
+
+article {
+  max-width: 900px;
+  margin: 20px auto;
+  padding: 20px;
+  background: white;
+  border-radius: 10px;
+}
+
+footer {
+  background: var(--header-footer-bg);
+  color: white;
+  text-align: center;
+  padding: 10px;
+  margin-top: 20px;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@media (max-width: 768px) {
+  .table-container {
+    flex-direction: column;
+    align-items: center;
+  }
+  table {
+    width: 90%;
+  }
+  aside {
+    width: 100%;
+    margin-left: 0;
+    margin-top: 20px;
+  }
+  aside img {
+    height: 200px;
+    width: 100%;
+  }
+  main {
+    padding: 10px;
+  }
+  nav {
+    width: 100%;
+    height: auto;
+    position: relative;
+  }
+  nav ul {
+    flex-direction: column;
+    gap: 10px;
+    padding: 0;
+    padding: 0;
+  }
+  nav:hover {
+    width: 100%;
+  }
+}
